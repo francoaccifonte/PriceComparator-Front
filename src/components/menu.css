@@ -1,0 +1,38 @@
+.People{
+  width: 200px;
+  background-color: blueviolet;
+  position: fixed;
+  
+  box-shadow: 0 2px 8px 0 teal;
+}
+
+.PeopleList{
+  list-style-type: none;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.People:hover{
+  box-shadow: 0 8px 16px 0 teal;
+}
+
+#root{
+  height: 100vh;
+  width: 100  vh
+}
+
+div.PersonName{
+  text-align: left;
+}
+
+div.PersonTimestamp{
+  text-align: right;
+  padding-right: 20px;
+}
+
+div.personBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

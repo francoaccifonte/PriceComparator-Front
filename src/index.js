@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Person from './components/person'
+import PersonList from './components/person_list'
+import Background from './components/background';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PersonList />
   </React.StrictMode>,
   document.getElementById('root')
 );
