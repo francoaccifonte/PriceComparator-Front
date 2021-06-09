@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Person from './components/person'
 import PersonList from './components/person_list'
 import Background from './components/background';
+import ReactCSSTransitionGroup from 'react-transition-group';
 
 ReactDOM.render(
   <React.StrictMode>
