@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Person from './components/person'
 import PersonList from './components/person_list'
 import Background from './components/background';
 import ReactCSSTransitionGroup from 'react-transition-group';
+import ProductList from './components/product_list'
 
 ReactDOM.render(
   <React.StrictMode>
-    <PersonList />
+    {/* <PersonList /> */}
+    <ProductList />
   </React.StrictMode>,
   document.getElementById('root')
 );

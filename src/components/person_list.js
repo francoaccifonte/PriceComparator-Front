@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import CallApi from '../lib/call_api'
+import ApiClient from '../lib/api_client'
 import Person from './person'
 import './menu.css'
 
 function PersonList(props) {
-  let api_client = new CallApi();
+  let api_client = new ApiClient();
   const [people, setPeople] = useState(api_client.people_list());
   const [status, setStatus] = useState('open')
 
