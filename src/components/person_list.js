@@ -5,8 +5,9 @@ import './menu.css'
 
 function PersonList(props) {
   let api_client = new ApiClient();
-  const [people, setPeople] = useState(api_client.people_list());
   const [status, setStatus] = useState('open')
+
+  const people = api_client.people_list();
 
 
   function ClosedMenu(params) {

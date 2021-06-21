@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 function Person(props) {
-  const [params, setParams] = useState(props)  
-  const [name, setName] = useState(props.name)
-  const [lastActivity, setLastActivity] = useState(props.lastActivity)
+  // const [name, setName] = useState(props.name)
+  // const [lastActivity, setLastActivity] = useState(props.lastActivity)
+  const name = props.name;
+  const lastActivity = props.lastActivity
 
   return (
     <div className="personBox">

@@ -1,13 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ApiClient from '../lib/api_client';
 import './styles/product_list.css'
 
 function ProductList(props) {
   let api_client = new ApiClient();
-  // var products = api_client.product_list();
-  const [products, setProducts] = useState(api_client.product_list(22, 0));
-  // const [products, setProducts] = useState({a: 1})
-  const [status, setStatus] = useState('open')
+  const products = api_client.product_list(22, 0);
 
   return(
     <div className="productListContainer">

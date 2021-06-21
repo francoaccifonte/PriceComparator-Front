@@ -1,5 +1,5 @@
-import ReactCSSTransitionGroup from 'react-transition-group'; // ES6
-import React, { useState } from 'react';
+// import ReactCSSTransitionGroup from 'react-transition-group'; // ES6
+import React from 'react';
 import './slider.css'
 
 function Background(props) {
