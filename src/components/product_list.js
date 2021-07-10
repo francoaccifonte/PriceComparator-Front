@@ -2,13 +2,18 @@ import React from 'react';
 import ApiClient from '../lib/api_client';
 import './styles/product_list.css'
 
-function ProductList(props) {
+function ProductList({ resultDisplayMode }) {
   let api_client = new ApiClient();
   const products = api_client.product_list(22, 0);
 
+  const productListClassName = {
+    list: "productList",
+    grid: "productGrid",
+  }
+
   return(
     <div className="productListContainer">
-      <ol className="productList">
+      <ol className={productListClassName[resultDisplayMode]}>
         {products.map(
           (product, index, array) => {return(
             <li>

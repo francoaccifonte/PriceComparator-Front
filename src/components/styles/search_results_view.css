@@ -1,0 +1,8 @@
+.searchResultsView{
+  display: flex;
+  flex-direction: row;
+}
+
+.productListContainer{
+  background-color: brown;
+}

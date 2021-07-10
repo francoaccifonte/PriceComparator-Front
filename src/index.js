@@ -2,12 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ProductList from './components/product_list'
+import SearchResultsView from './components/search_results_view'
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <PersonList /> */}
-    <ProductList />
+    <SearchResultsView />
   </React.StrictMode>,
   document.getElementById('root')
 );
