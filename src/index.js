@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SearchResultsView from './components/search_results_view'
+import SearchResults from './views/search_results/search_results'
 
 ReactDOM.render(
   <React.StrictMode>
-    <SearchResultsView />
+    <SearchResults />
   </React.StrictMode>,
   document.getElementById('root')
 );
