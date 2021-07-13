@@ -4,7 +4,7 @@ import NavigationBar from './navigation_bar';
 import './styles/search_results_view.css';
 
 function SearchResultsView(props) {
-  const [resultDisplayMode, setResultDisplayMode] = useState('grid')
+  const [resultDisplayMode, setResultDisplayMode] = useState('list')
 
   const handleDisplayModeChange = () => {
     switch (resultDisplayMode){

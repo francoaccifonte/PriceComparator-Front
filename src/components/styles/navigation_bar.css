@@ -1,6 +1,10 @@
 .navigationBar{
-  position: static;
-  width: 200px;
+  position: fixed;
+  width: 10%;
+  height: 100%;
+  margin: 0px;
+  padding-top: 20%;
+  padding-bottom: 40%;
   background-color: blueviolet;
 }
 
@@ -12,4 +16,11 @@
 .navigationBar input[type="text"]:hover{
   box-shadow: chocolate;
   width: 100px;
+}
+
+.productsResults{
+  width: 90%;
+  padding: 1em;
+  margin-left: 10%;
+  background-color: black;
 }
