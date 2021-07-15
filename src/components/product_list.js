@@ -1,11 +1,11 @@
 import React from 'react';
-import ApiClient from '../lib/api_client';
 import './styles/product_list.css'
 import './styles/product_grid.css'
+import { Link } from 'react-router-dom';
 
-function ProductList({ resultDisplayMode }) {
-  let api_client = new ApiClient();
-  const products = api_client.product_list(22, 0);
+function ProductList({ resultDisplayMode, products }) {
+
+  console.log(typeof products.map === 'function');
 
   return(
     <div className="productsResults">
@@ -16,10 +16,14 @@ function ProductList({ resultDisplayMode }) {
               <li>
                 <div className="productCard" displayStyle={resultDisplayMode}>
                   <div className="productCardImage">
-                    <img src={product.img()} alt={"asdfg"}/>
+                    <Link to={`/product/${product.id}`}>
+                      <img src={product.img()} alt={"asdfg"}/>
+                    </Link>
                   </div>
                   <div className="productCardText" displayStyle={resultDisplayMode}>
-                    <h1>{product.name}</h1>
+                    <Link to={`/product/${product.id}`}>
+                      <h1>{product.name}</h1>
+                    </Link>
                     <p className="price">${String(parseFloat(product.price)-0.01)}</p>
                     <p className="description">{product.description}</p>
                   </div>
